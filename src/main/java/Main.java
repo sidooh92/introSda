@@ -6,19 +6,27 @@ public class Main {
         String text = "My first text";
         System.out.println(text + " " + number);
 
-
         int[] tab =  new int[10];
         tab[0] = 111;
         tab[2] = 222;
 
         System.out.println(tab[0] + " " + tab[2]);
 
+       int firstNumberToAdd = 9999;
+       int secondNumberToAdd = 123;
+       int ourResult = sumTwoIntegers(firstNumberToAdd,secondNumberToAdd);
+        System.out.println("ourResult: " + ourResult);
 
-
-
-
-
-        //formularz znizka
-        //https://goo.gl/forms/egDkcxePXLvtJV8O2
     }
+
+    public static int sumTwoIntegers(int firstInt, int secondInt)
+    {
+        int sum = firstInt + secondInt;
+        return sum;
+    }
+
+
+
+
+
 }

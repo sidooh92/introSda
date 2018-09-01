@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //formularz znizka
@@ -28,6 +30,17 @@ public class Main {
                 System.out.println("Our number is even I= " + i);
             }
         }
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj pierwszą liczbę");
+        int a = scanner.nextInt();
+        System.out.println("Podaj drugą liczbę");
+        int b = scanner.nextInt();
+        System.out.println("Podaj operację");
+        String operation = scanner.next();
+        String result = calculate(a, b, operation);
+        System.out.println("Wynik to: " + result);
     }
 
     public static int sumTwoIntegers(int firstInt, int secondInt)
@@ -37,7 +50,22 @@ public class Main {
     }
 
 
-
+    public static String calculate(int a, int b, String operation) {
+        try {
+            if (operation.equals("+")) {
+                return String.valueOf(a + b);
+            } else if (operation.equals("-")) {
+                return String.valueOf(a - b);
+            } else if (operation.equals("/")) {
+                return String.valueOf(a / b);
+            } else if (operation.equals("*")) {
+                return String.valueOf(a * b);
+            }
+        } catch (Exception e) {
+            return "Błąd";
+        }
+        return "Zły znak";
+    }
 
 
 }

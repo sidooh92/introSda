@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
+        //formularz znizka
+        //https://goo.gl/forms/egDkcxePXLvtJV8O2
+
         System.out.println("hello world");
 
         int number = 100;
@@ -18,14 +21,13 @@ public class Main {
         System.out.println(ourResult);
 
 
-        for(int i = 0; i < 10; i++) {
+        for(int i = 1; i <= 10; i++) {
             System.out.println("TEXT, i = " + i);
+
+            if(i % 2 == 0) {
+                System.out.println("Our number is even I= " + i);
+            }
         }
-        
-
-
-
-
     }
 
     public static int sumTwoIntegers(int firstInt, int secondInt)

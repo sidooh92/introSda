@@ -15,7 +15,16 @@ public class Main {
        int firstNumberToAdd = 9999;
        int secondNumberToAdd = 123;
        int ourResult = sumTwoIntegers(firstNumberToAdd,secondNumberToAdd);
-        System.out.println("ourResult: " + ourResult);
+        System.out.println(ourResult);
+
+
+        for(int i = 0; i < 10; i++) {
+            System.out.println("TEXT, i = " + i);
+        }
+        
+
+
+
 
     }
 
